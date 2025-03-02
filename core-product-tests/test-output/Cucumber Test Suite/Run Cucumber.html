@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  Run Cucumber</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run Cucumber</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 02 12:38:33 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>403 seconds (403799 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nba.warriors.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.nba.warriors.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Collect all jacket details and attach to report", "Shop for Jackets"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;...&quot; tabindex=&quot;-1&quot; href=&quot;/warriors/news&quot; class=&quot;_link_47u7w_11 text-2sm&quot;&gt;News &amp;amp; Features&lt;/a&gt; is not clickable at point (124, 14). Other element would receive the click: &lt;div class=&quot;flex items-center justify-between mx-auto px-4 py-2 lg:max-w-screen-xxl&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.142)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;gjangili-mac&apos;, ip: &apos;fe80:0:0:0:45c:1f80:6110:985c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6890d7e655bbdaf7b9dea3d104e7f1fb, clickElement {id=f.1E7B97AC0711361E0EDA08E46CE611D3.d.712410137CCFDFDB0F5E5BB77AAD59FD.e.132}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/l7/nbjc0s716m7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53075/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (6890d7e655bbdaf7b9dea3d104e7f1fb)] -&gt; xpath: //a[contains(@title,&apos;News &amp; Features&apos;)]]
+Session ID: 6890d7e655bbdaf7b9dea3d104e7f1fb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.framework.pages.BasePage.clickElement(BasePage.java:28)
+	at com.nba.wariors.pages.ShopPage.navigateToNewAndFeaturesSection(ShopPage.java:179)
+	at com.nba.warriors.stepdefinitions.ShopSteps.userNavigatesToNewsFeaturesSection(ShopSteps.java:59)
+	at ✽.User navigates to News and Features Page from CP Home Page(file:///opt/Automation/lsaasqr/WebTestAutomation/core-product-tests/src/test/resources/features/CountVideoFeeds.feature:4)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1794531113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1794531113'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;...&quot; tabindex=&quot;-1&quot; href=&quot;/warriors/news&quot; class=&quot;_link_47u7w_11 text-2sm&quot;&gt;News &amp;amp; Features&lt;/a&gt; is not clickable at point (124, 14). Other element would receive the click: &lt;div class=&quot;flex items-center justify-between mx-auto px-4 py-2 lg:max-w-screen-xxl&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.142)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;gjangili-mac&apos;, ip: &apos;fe80:0:0:0:45c:1f80:6110:985c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6890d7e655bbdaf7b9dea3d104e7f1fb, clickElement {id=f.1E7B97AC0711361E0EDA08E46CE611D3.d.712410137CCFDFDB0F5E5BB77AAD59FD.e.132}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/l7/nbjc0s716m7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53075/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (6890d7e655bbdaf7b9dea3d104e7f1fb)] -&gt; xpath: //a[contains(@title,&apos;News &amp; Features&apos;)]]
+Session ID: 6890d7e655bbdaf7b9dea3d104e7f1fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.framework.pages.BasePage.clickElement(BasePage.java:28)
+	at com.nba.wariors.pages.ShopPage.navigateToNewAndFeaturesSection(ShopPage.java:179)
+	at com.nba.warriors.stepdefinitions.ShopSteps.userNavigatesToNewsFeaturesSection(ShopSteps.java:59)
+	at ✽.User navigates to News and Features Page from CP Home Page(file:///opt/Automation/lsaasqr/WebTestAutomation/core-product-tests/src/test/resources/features/CountVideoFeeds.feature:4)
+</pre></div></td>
+<td>141</td>
+<td>com.nba.warriors.runner.TestRunner@2b91004a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nba.warriors.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.nba.warriors.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Collect all jacket details and attach to report", "Shop for Jackets"</td>
+<td></td>
+<td>261</td>
+<td>com.nba.warriors.runner.TestRunner@2b91004a</td></tr>
+</table><p>
+</body>
+</html>

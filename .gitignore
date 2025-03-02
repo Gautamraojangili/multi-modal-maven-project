@@ -1,0 +1,12 @@
+target/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+/.idea/
+/*.bat
+/.mvn/
+.settings/
+*.swp
+

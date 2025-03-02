@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-02T13:22:48 IST" name="Cucumber Test Suite" finished-at="2025-03-02T13:28:52 IST" duration-ms="364529">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nba.warriors.runner.GetJacketPriceRunner@2b91004a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nba.warriors.runner.CountVideoFeedsRunner@43dac38f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-02T13:22:48 IST" name="Get Jacket Price" finished-at="2025-03-02T13:28:52 IST" duration-ms="364529">
+      <class name="com.nba.warriors.runner.GetJacketPriceRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.nba.warriors.runner.GetJacketPriceRunner@2b91004a]" started-at="2025-03-02T13:22:48 IST" name="setUpClass" finished-at="2025-03-02T13:22:48 IST" duration-ms="808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74ea2410]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.nba.warriors.runner.GetJacketPriceRunner@2b91004a]" started-at="2025-03-02T13:22:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-02T13:28:52 IST" duration-ms="363676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Collect all jacket details and attach to report"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shop for Jackets"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.nba.warriors.runner.GetJacketPriceRunner@2b91004a]" started-at="2025-03-02T13:28:52 IST" name="tearDownClass" finished-at="2025-03-02T13:28:52 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.nba.warriors.runner.GetJacketPriceRunner -->
+    </test> <!-- Get Jacket Price -->
+  </suite> <!-- Cucumber Test Suite -->
+</testng-results>

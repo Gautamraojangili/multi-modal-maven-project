@@ -1,0 +1,13 @@
+<suite name="Cucumber Test Suite" parallel="tests" thread-count="2">
+    <test name="Get Jacket Price">
+        <classes>
+            <class name="com.nba.warriors.runner.GetJacketPriceRunner"/>
+        </classes>
+    </test>
+
+    <test name="Get Video Feed Count">
+        <classes>
+            <class name="com.nba.warriors.runner.CountVideoFeedsRunner"/>
+        </classes>
+    </test>
+</suite>

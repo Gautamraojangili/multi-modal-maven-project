@@ -1,0 +1,8 @@
+<suite name="Cucumber Test Suite" parallel="tests" thread-count="1">
+	<test name="Get Jacket Price">
+		<classes>
+			<class name="com.nba.bulls.runner.HomePageFooterRunner" />
+		</classes>
+	</test>
+</suite>
+
